@@ -7,4 +7,4 @@ Treat the board as a cheap IP camera and audit it: what it sends over Wi-Fi, whe
 - **Starts from:** `RTSP Streaming` (examples in the [Ameba Arduino SDK](https://github.com/Ameba-AIoT/ameba-arduino-pro2))
 - **To add:** A written audit with packet captures from my own network only.
 
-Back to the [project list](../README.md).
+Back to the [project list](../../README.md).

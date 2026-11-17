@@ -7,4 +7,4 @@ Build the stock face-recognition door unlock, then attack it with a photo, a pho
 - **Starts from:** `DoorUnlockWithFaceRecognition` (examples in the [Ameba Arduino SDK](https://github.com/Ameba-AIoT/ameba-arduino-pro2))
 - **To add:** An attack log and a results table.
 
-Back to the [project list](../README.md).
+Back to the [project list](../../README.md).

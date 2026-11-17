@@ -7,4 +7,4 @@ The board posts a snapshot and a spoken question to a PC on the same network, wh
 - **Starts from:** `HTTP Post Image and MP4` (examples in the [Ameba Arduino SDK](https://github.com/Ameba-AIoT/ameba-arduino-pro2))
 - **To add:** A small server that hands the image to a local model.
 
-Back to the [project list](../README.md).
+Back to the [project list](../../README.md).
