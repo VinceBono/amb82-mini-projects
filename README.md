@@ -15,7 +15,7 @@ A $30 Wi-Fi camera board that runs neural networks on the device (RTL8735B, 0.4 
 
 | Project | What it does | Status |
 |---|---|---|
-| [Fool the camera](amb82-mini/fool-the-camera/) | Run the stock person detector, then try to make it miss you with printed patches, clothing and lighting. A scoreboard records which attacks worked. | planned |
+| [Fool the camera](amb82-mini/fool-the-camera/) | Run the stock person detector, then try to make it miss you with printed patches, clothing and lighting. A scoreboard records which attacks worked. | code written, not run on a board |
 | [Replay-attack door lock](amb82-mini/replay-attack-door-lock/) | Build the stock face-recognition door unlock, then attack it with a photo, a phone screen and a printed mask, and score each attack. | planned |
 | [Camera with a flight recorder](amb82-mini/camera-flight-recorder/) | Every detection is appended to a hash-chained log, so edits to the record can be detected afterwards. | planned |
 | [Rogue-camera teardown](amb82-mini/rogue-camera-teardown/) | Treat the board as a cheap IP camera and audit it: what it sends over Wi-Fi, whether the video stream needs a password, what secure boot protects. | planned |

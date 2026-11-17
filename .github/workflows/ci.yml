@@ -15,3 +15,21 @@ jobs:
           python-version: "3.12"
       - run: python scripts/check_links.py
       - run: python scripts/commitguard.py --all
+      - run: python -m unittest discover -s amb82-mini/fool-the-camera -p "test_*.py"
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Install the AmebaPro2 board package
+        run: |
+          arduino-cli config init
+          arduino-cli config add board_manager.additional_urls https://github.com/Ameba-AIoT/ameba-arduino-pro2/raw/main/Arduino_package/package_realtek_amebapro2_index.json
+          arduino-cli core update-index
+          arduino-cli core install realtek:AmebaPro2
+          arduino-cli board listall realtek
+      - name: Compile fool_the_camera
+        run: |
+          cd amb82-mini/fool-the-camera/fool_the_camera
+          cp secrets.h.example secrets.h
+          arduino-cli compile --fqbn realtek:AmebaPro2:Ameba_AMB82-MINI .
